@@ -1,0 +1,37 @@
+.Category{
+    width: 32%;
+    aspect-ratio: 16/9;
+    background-image:url('../../assests/cartoon.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    .category-content{
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        transition: 0.2s ease;
+        margin-top: 0px;
+
+        .heading{
+            color: white;
+        }
+
+        &:hover{
+            background-color: rgba(0,0,0,0.2);
+        }
+
+    }
+
+}
+
+@media screen and (max-width:'768px') {
+    .Category{
+        width: 48%;
+    }
+}
+@media screen and (max-width:'480px') {
+    .Category{
+        width: 100%;
+    }
+}

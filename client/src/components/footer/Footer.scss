@@ -1,0 +1,82 @@
+.Footer{
+    background-color:rgba(0,0,0,0.05) ;
+    padding-block:20px ;
+    margin-top: 80px;
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+
+        .title{
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 20px;
+
+        }
+
+        .footer-left{
+            .follow{
+                list-style-type: none;
+                display: flex;
+                gap: 8px;
+
+                li{
+                    width: 36px;
+                    height: 36px;
+                    background-color: white;
+                    border-radius: 50%;
+                    
+
+                    &:hover {
+                        background-color: rgba(0,0,0,0.1);
+                    }
+                }
+            
+                
+            }
+        }
+
+        .footer-right{
+            .company{
+                li{
+                    margin-top: 10px;
+                    list-style: none;
+                    color: var(--secondary-text-color);
+
+                    &:hover{
+                        color: var(--accent-color);
+                    }
+                }
+            }
+        }
+    }
+
+
+    .subfooter{
+        display: flex;
+        flex-direction: column;
+        .creditCardimg{
+            width: 200px;            
+            text-align: center;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:'768px') {
+    .Footer{
+        .content{
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+    }
+}
+// @media screen and (max-width:'480px') {
+//     .Category{
+//         width: 100%;
+//     }
+// }
